@@ -94,7 +94,7 @@ html, body {
 }
 
 .textSubHeader {
-    font-size: 2em;
+    font-size: 1.5em;
     font-weight: 450;
     text-align: left;
 }
@@ -124,9 +124,12 @@ html, body {
 
 .dimBox {
     background: rgba(255, 255, 255, 0.7);
-    padding: 35px;
+    padding: 0;
+    width: 100%;
+}
+
+.textJustify {
     text-align: justify;
-    width: 70%;
 }
 
 
@@ -139,10 +142,10 @@ html, body {
 }
 
 #profilePic {
-    width: 250px;
-    height: 300px;
-    min-width: 250px;
-    min-height: 300px;
+    width: 150px;
+    height: 200px;
+    min-width: 150px;
+    min-height: 200px;
     border-radius: 50%;
 }
 
@@ -315,8 +318,8 @@ html, body {
 }
 
 .downloadResume {
-    min-width: 120px;
-    height: 42px;
+    min-width: 110px;
+    height: 50px;
 
 }
 .downloadResume:hover{
@@ -325,6 +328,41 @@ html, body {
     font-weight: bolder;s
 }
 
-.mediaContainer {
+.mediaContainer, .gitHubIcon, .downloadCVIcon {
     text-align: center;
+}
+
+
+
+@media only screen and (min-width: 980px) {
+    .dimBox {
+        width: 70%;
+        padding: 35px;
+    }
+
+    #profilePic {
+        width: 250px;
+        height: 300px;
+        min-width: 250px;
+        min-height: 300px;
+        border-radius: 50%;
+    }
+
+    .gitHubIcon {
+        text-align: right;
+    }
+
+    .downloadCVIcon {
+        text-align: left;
+    }
+
+    .downloadResume {
+        min-width: 110px;
+        height: 42px;
+
+    }
+    .textJustify {
+        text-align: left;
+    }
+
 }
