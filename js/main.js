@@ -1,3 +1,7 @@
+$(window).load(function() {
+	$(".se-pre-con").fadeOut("slow");
+});
+
 $(document).ready(function($){
 	$(this).scrollTop(0);
 
