@@ -75,14 +75,14 @@ Main components
   position: absolute;
   top: 0;
   left: 0;
-  width: 70px;
-  height: 70px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
 }
 .cd-timeline-img img {
   display: block;
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   position: relative;
   left: 10%;
   top: 10%;
@@ -90,18 +90,24 @@ Main components
   margin-left: -15px;
   margin-top: -15px;
   box-shadow: 0 0 0 4px white, inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05);
+  z-index: 10;
 
 }
 
 @media only screen and (min-width: 1170px) {
   .cd-timeline-img {
-    width: 60px;
-    height: 60px;
+    width: 70px;
+    height: 70px;
     left: 50%;
     margin-left: -30px;
     /* Force Hardware Acceleration in WebKit */
     -webkit-transform: translateZ(0);
     -webkit-backface-visibility: hidden;
+  }
+
+  .cd-timeline-img img {
+    width: 70px;
+    height: 70px;
   }
   .cssanimations .cd-timeline-img.is-hidden {
     visibility: hidden;
@@ -173,12 +179,13 @@ Main components
 }
 .cd-timeline-content {
   position: relative;
-  margin-left: 38px;
+  margin-left: 0;
   background: white;
   border-radius: 0.25em;
   padding: 1em;
   box-shadow: 0 3px 0 #d7e4ed;
   left: 8%;
+  width: 100%;
 }
 
 .cd-timeline-content:after {
@@ -217,7 +224,7 @@ Main components
   font-size: 0.8em;
 }
 
-.no-touch .cd-timeline-content .cd-read-more:hover {
+.no-touch .cd-timeline-content .cd-read-more:hover, .cd-read-more:link {
   background-color: #bac4cb;
   text-decoration: none;
 }

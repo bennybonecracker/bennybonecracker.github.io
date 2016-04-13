@@ -129,7 +129,7 @@ html, body {
 }
 
 .textJustify {
-    text-align: justify;
+    text-align: left;
 }
 
 
@@ -324,7 +324,6 @@ html, body {
 .downloadResume:hover{
     color: #FFF;
     text-decoration: none;
-    font-weight: bolder;s
 }
 
 .mediaContainer, .gitHubIcon, .downloadCVIcon {
