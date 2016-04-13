@@ -64,11 +64,11 @@ $(document).ready(function($){
 
 	$(".cd-read-more").on('click',function(){
 	}, function(){
-		if(!$(this).siblings(".complete").is(':visible')) {
+		if($(this).siblings(".complete").css('display') == 'none') {
 	  	  $(this).siblings(".complete").fadeIn("slow", function() {});
 	      $(this).text("Hide text").show();
 		} else {
-			 $(this).siblings(".complete").fadeOut( "fast", function() {});
+			 $(this).siblings(".complete").fadeOut("fast", function() {});
 			 $(this).text("Read more").show();
 		}
 	});

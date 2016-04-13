@@ -25,7 +25,8 @@ html, body {
 #homeViewContainer {
 	background: url("../images/bg2.jpg") top center no-repeat;
 
-    height: 100%;
+    height: auto;
+    padding-bottom: 30px;
 }
 
 #profileContainer {
