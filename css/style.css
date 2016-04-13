@@ -189,10 +189,10 @@ html, body {
 
 #skill { 
     list-style: none;
-    width: 70%;
+    width: 100%;
     position: relative;
     line-height: 2em;
-    padding: 30px 0;
+    padding: 30px 0 0 0;
     font-size: 1em;
     display: none;
 }
@@ -319,7 +319,6 @@ html, body {
 
 .downloadResume {
     min-width: 110px;
-    height: 50px;
 
 }
 .downloadResume:hover{
@@ -338,6 +337,10 @@ html, body {
     .dimBox {
         width: 70%;
         padding: 35px;
+    }
+
+    #skill {
+        width: 80%;
     }
 
     #profilePic {
