@@ -163,11 +163,7 @@ html, body {
 }
 
 #profilePic {
-    width: 150px;
-    height: 200px;
-    min-width: 150px;
-    min-height: 200px;
-    border-radius: 50%;
+
 }
 
 #homeView .img-responsive {
@@ -364,11 +360,7 @@ html, body {
     }
 
     #profilePic {
-        width: 250px;
-        height: 300px;
-        min-width: 250px;
-        min-height: 300px;
-        border-radius: 50%;
+
     }
 
     .gitHubIcon {
@@ -385,7 +377,7 @@ html, body {
 
     }
     .textJustify {
-        text-align: left;
+        text-align: justify;
     }
 
 }
